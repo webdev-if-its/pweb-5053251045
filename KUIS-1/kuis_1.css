@@ -1,0 +1,178 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 1rem;
+  color: var(--navy-gelap);
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+* {box-sizing: border-box;}
+
+:root {
+  --navy: #2a2f6b;
+  --navy-gelap: #1d1f4a;
+  --kuning: #fcc44f;
+  --abu-tombol: #f5f5f7;
+  --teks: #555;
+  --placeholder: #e4e6f0;
+  --fokus: #6c72c9;
+}
+
+.halaman {
+  flex: 0 1 1296px;
+  padding: 20px 0 80px;
+}
+a { text-decoration: none; }
+
+.top-box {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  align-items: center;
+}
+.logo { height: 72px; }
+.header-kanan {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+nav {
+  flex: 1;
+  display: flex;
+  gap: 24px;
+}
+nav a {
+  color: var(--navy);
+  font-size: 0.95rem;
+}
+.tombol-tas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: var(--abu-tombol);
+}
+
+.tombol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.95rem;
+  border-radius: 4px;
+}
+.tombol-shop {
+  width: 113px;
+  height: 46px;
+  background-color: var(--navy);
+  color: #fff;
+}
+.grup-tombol {
+  display: flex;
+  gap: 18px;
+  margin-top: 44px;
+}
+.tombol-abu,
+.tombol-kuning {
+  width: 166px;
+  height: 56px;
+  color: var(--navy);
+}
+.tombol-abu { background-color: var(--abu-tombol); }
+.tombol-kuning { background-color: var(--kuning); }
+
+.tombol-shop:hover { background-color: var(--navy-gelap); }
+.tombol-abu:hover { background-color: #e6e6ea; }
+.tombol-kuning:hover { background-color: #f0b232; }
+nav a:focus-visible,
+.tombol:focus-visible,
+.tombol-tas:focus-visible { outline: 3px solid var(--fokus); }
+
+.hero {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  align-items: center;
+  margin-top: 19px;
+}
+.hero-teks { padding-right: 40px; }
+h1 {
+  font-size: 3.5rem;
+  color: #000;
+  margin: 0 0 32px;
+  width: 85%;
+}
+.description { width: 85%; }
+.description p {
+  display: inline;
+  font-size: 1rem;
+  color: var(--teks);
+  margin: 0;
+}
+
+.bukti-sosial {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 94px;
+}
+.bukti-sosial p {
+  margin: 0;
+  width: 270px;
+  color: var(--teks);
+}
+.avatar-grup { display: flex; }
+.avatar {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: -14px;
+  object-fit: cover;
+}
+.foto {
+  width: 100%;
+  object-fit: cover;
+}
+
+.avatar-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  margin-right: 0;
+  background-color: var(--navy);
+  color: var(--kuning);
+  font-size: 0.95rem;
+}
+
+.galeri {
+  display: flex;
+  gap: 16px;
+}
+.kolom {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.foto {
+  width: 100%;
+  background-color: var(--placeholder);
+}
+.produk {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
+  margin-top: 92px;
+}
+.etalase {
+  width: 100%;
+  background-color: #000;
+}
+.produk h2 {
+  font-size: 2.875rem;
+  color: #000;
+  margin: 0;
+  width: 76%;
+}
